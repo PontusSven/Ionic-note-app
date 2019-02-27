@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { ListPage } from './list.page';
+import { ModalPagePage } from '../modal-page/modal-page.page';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { ListPage } from './list.page';
       }
     ])
   ],
-  declarations: [ListPage]
+  declarations: [ListPage, ModalPagePage],
+  entryComponents: [ModalPagePage]
 })
 export class ListPageModule {}
