@@ -1,9 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ModalPage</ion-title>
+    <ion-title>Create note</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-
+  
+    <ion-input [(ngModel)]="title" placeholder="Title"></ion-input>
+    <ion-item>
+      <ion-textarea [(ngModel)]="content" style="padding-top: 20px;" placeholder="Write documentation here..."></ion-textarea>
+    </ion-item>
+    <ion-button shape="round" (click)="dismiss()" color="primary">Cancel</ion-button>
+    <ion-button shape="round" (click)="saveNote()" color="primary">Save</ion-button>
 </ion-content>
